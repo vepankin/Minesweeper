@@ -176,7 +176,7 @@ def show_mines(bgcolor='red'):
     for b in btn:
         cell = game.board[b.row][b.col]
         if cell.mine and not cell.open:
-            b.config(text=CH_M_SHOW, state=DISABLED, bg=bgcolor)
+            b.config(text=CH_M_SHOW, state=DISABLED, bg=bgcolor, disabledforeground=DEFAULT_TEXT_COLOR)
 
                                    
 def button_click(idx):
